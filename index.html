@@ -7,58 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letra Soldadito Marinero</title>
     <style>
+        /*Se le pone color de fondo al body*/
         body {
             background-color: grey;
         }
 
-        /* unvisited link */
+        /* Color para enlace no visitado */
         a:link {
             color: rgb(121, 197, 44);
         }
 
-        /* visited link */
+        /* Color para enlace visitado */
         a:visited {
             color: blue;
         }
 
-        /* mouse over link */
+        /* Color al pasar el cursor por los link  */
         a:hover {
             color: rgb(88, 168, 239);
         }
 
-        /* selected link */
-        a:active {
-            color: yellow;
-        }
-
+        /*Se le da estilo al elemento h2*/
         h2{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: large;
             color: darkblue;
         }
 
+        /*Se le da estilo al elemento h3*/
         h3 {
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
         }
 
+        /*Se le da estilo a la fuente de los elementos a*/
         a{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
         }
         
-
+        /*Se le da estilo a los elementos p*/
         p {
             line-height: 30%;
             padding: 12px;
         }
 
+        /*Se le da estilo a todos los div*/
         div {
             width: fit-content;
             height: fit-content;
             padding: 36px;
         }
 
+        /*Se pone sólamente la primera letra de cada div con un estilo diferente*/
         div>p::first-letter {
             font-size: 200%;
             font-weight: bold;
@@ -67,46 +68,30 @@
 
         }
 
+        /*Se pone solamente al final de cada párrafo tres puntos suspensivos en color negro*/
         div>p:nth-last-child(1)::after {
             content: "...";
             color: black;
         }
 
+        /*Se le pone otro color de fondo a los div pares solamente*/
         div:nth-child(2n+0) {
             background-color: lightgray;
         }
 
-        /*boton {
-            padding: 0.1em 0.6em;
-            border: 1px solid #ccc;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #fff inset;
-            border-radius: 3px;
-            display: inline-block;
-            margin: 0px 0.1em;
-            text-shadow: 0px 1px 0px #fff;
-            line-height: 1.4;
-            white-space: nowrap;
-            font-size: medium;
-            cursor: pointer;
+        /*Se le da color a la flecha*/
+        flecha{
+            color: chartreuse;
         }
 
-        boton:active {
-            background-color: transparent;
-            cursor: pointer;
-            font-size: large;
-            
-        }*/
-
+        /*Se le da estilo al contenido del modal*/
         .modal-contenido {
             background-color: rgb(172, 235, 235);
             width: 80%;
             margin:auto;
             position: relative;
         }
-
+        /*Se le da estilo a la ventana modal*/
         .modal {
             background-color: rgba(8, 5, 91, 0.3);
             position: fixed;
@@ -175,7 +160,9 @@
         <p>Después de un invierno malo</p>
     </div>
 
+
     <flecha>➤</flecha>
+    <!--" Aquí se encuentra la ventana modal en la parte de html "-->
     <a href="#miModal">Para más info, clic aquí ♪ ♫ ♬</a>
     <div id="miModal" class="modal">
         <div class="modal-contenido">
