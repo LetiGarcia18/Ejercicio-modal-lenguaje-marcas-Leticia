@@ -28,7 +28,7 @@
         }
 
         /*Se le da estilo al elemento h2*/
-        h2{
+        h2 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: large;
             color: darkblue;
@@ -36,16 +36,16 @@
 
         /*Se le da estilo al elemento h3*/
         h3 {
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
         }
 
         /*Se le da estilo a la fuente de los elementos a*/
-        a{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        a {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
         }
-        
+
         /*Se le da estilo a los elementos p*/
         p {
             line-height: 30%;
@@ -80,7 +80,7 @@
         }
 
         /*Se le da color a la flecha*/
-        flecha{
+        flecha {
             color: chartreuse;
         }
 
@@ -88,9 +88,10 @@
         .modal-contenido {
             background-color: rgb(172, 235, 235);
             width: 80%;
-            margin:auto;
+            margin: auto;
             position: relative;
         }
+
         /*Se le da estilo a la ventana modal*/
         .modal {
             background-color: rgba(8, 5, 91, 0.3);
@@ -105,14 +106,19 @@
             height: 70%;
             width: 70%;
             padding-top: 100px;
-            pointer-events:initial;
+            pointer-events: initial;
             overflow: auto;
             transition: all 1s;
         }
 
         #miModal:target {
             opacity: 1;
-            pointer-events:visible;
+            pointer-events: visible;
+        }
+
+        /* Smartphones (horizontal y vertical) */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            /* estilos */
         }
     </style>
 </head>
