@@ -79,41 +79,52 @@
             background-color: lightgray;
         }
 
-        /*Se le da color a la flecha*/
-        flecha {
-            color: chartreuse;
-        }
-
-        /*Se le da estilo al contenido del modal*/
-        .modal-contenido {
-            background-color: rgb(172, 235, 235);
-            width: 80%;
-            margin: auto;
-            position: relative;
-        }
-
-        /*Se le da estilo a la ventana modal*/
+        /* The Modal (background) */
         .modal {
-            background-color: rgba(8, 5, 91, 0.3);
             position: fixed;
-            margin: auto;
+            /* Stay in place */
+            display: none;
+            /* Hidden by default */
             z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
             top: 0;
             right: 0;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            height: 70%;
             width: 70%;
-            padding-top: 100px;
-            pointer-events: initial;
+            /* Full width */
+            height: 70%;
+            /* Full height */
+            margin: auto;
             overflow: auto;
-            transition: all 1s;
+            /* Enable scroll if needed */
+            background-color: #B6F9F9;
+            /* Black w/ opacity */
         }
 
-        #miModal:target {
-            opacity: 1;
-            pointer-events: visible;
+        /* Modal Content */
+        .modal-content {
+            margin: auto;
+            padding: 20px;
+            border: 5px solid rgb(16, 29, 210);
+            width: 80%;
+        }
+
+        /* The Close Button */
+         .close {
+            color: #467ad5;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+
+         .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
         }
 
     </style>
